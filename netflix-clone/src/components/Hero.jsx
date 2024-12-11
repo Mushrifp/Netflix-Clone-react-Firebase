@@ -17,9 +17,6 @@ function Hero() {
       }).catch((err) => console.log(err))
     },[])
 
-   const imgUrl = movie.backdrop_path ? movie.backdrop_path : movie.poster_path
-
-
 
   return (
     <div className="relative w-full h-[650px] bg-black">
@@ -28,7 +25,7 @@ function Hero() {
         
     <img 
       className="object-cover w-full h-full" 
-      src={`${endpoints.image}${imgUrl}`} 
+      src={`${endpoints.image}${movie.backdrop_path}`} 
       alt={movie.title} 
     />
  
