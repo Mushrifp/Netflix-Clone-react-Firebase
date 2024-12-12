@@ -1,11 +1,10 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import React from "react";
+import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
     <div className="bg-black-800 text-white py-10">
       <div className="container mx-auto text-center">
-
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
             <p className="font-semibold mb-2">Questions? Contact us</p>
@@ -32,15 +31,19 @@ function Footer() {
         </div>
 
         <div className="flex justify-center space-x-6 mb-6">
-          <FaFacebook size={24}  />
-          <FaTwitter size={24}  />
-          <FaGithub size={24}  />
-          <FaLinkedin size={24}  />
+          <FaFacebook size={24} />
+          <FaTwitter size={24} />
+          <FaGithub size={24} />
+          <FaLinkedin size={24} />
         </div>
 
         <div>
-          <a href="#" className="text-sm hover:text-gray-400 mx-3">Privacy Policy</a>
-          <a href="#" className="text-sm hover:text-gray-400 mx-3">Terms of Service</a>
+          <a href="#" className="text-sm hover:text-gray-400 mx-3">
+            Privacy Policy
+          </a>
+          <a href="#" className="text-sm hover:text-gray-400 mx-3">
+            Terms of Service
+          </a>
         </div>
       </div>
     </div>

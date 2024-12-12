@@ -31,7 +31,7 @@ export function Context({ children }) {
 
   const logOut = () => {
     return signOut(auth);
-  }; 
+  };
 
   return (
     <AuthContext.Provider value={{ user, signIn, logIn, logOut }}>

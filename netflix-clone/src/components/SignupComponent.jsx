@@ -11,7 +11,7 @@ function SignupComponent() {
   const { user, signIn } = useAuth();
 
   if (user) {
-    navigate("/");
+    navigate("/"); 
   }
 
   const [email, setEmail] = useState("");

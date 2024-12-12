@@ -13,7 +13,7 @@ const TrendingCard = ({ numberImage, posterPath }) => {
           className="h-full w-full object-cover rounded-r-lg"
         />
       </div>
-    </div>
+    </div> 
   );
 };
 

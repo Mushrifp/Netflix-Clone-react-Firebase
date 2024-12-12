@@ -12,7 +12,6 @@ function TrailerComponent() {
   useEffect(() => {
     const fetchTrailer = async () => {
       try {
-
         const dataFromApi = await axios.get(endpoints.trailer(id));
         const trailers = dataFromApi.data.results;
         const trailer = trailers.find((video) => video.type === "Trailer");
@@ -23,8 +22,8 @@ function TrailerComponent() {
           alert("Trailer not available");
         }
 
-        const detailsResponse = await axios.get(endpoints.movieIdApi(id))
-        console.log(detailsResponse.data)
+        const detailsResponse = await axios.get(endpoints.movieIdApi(id));
+        console.log(detailsResponse.data);
         setMovieDetails(detailsResponse.data);
       } catch (error) {
         console.error("Error fetching trailer or movie details:", error);
@@ -34,11 +33,8 @@ function TrailerComponent() {
     fetchTrailer();
   }, []);
 
-  
-
   return (
     <div className="p-16">
-     
       <div className="mb-6">
         {trailerUrl ? (
           <iframe

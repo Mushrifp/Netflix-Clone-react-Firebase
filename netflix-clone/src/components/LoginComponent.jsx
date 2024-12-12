@@ -33,9 +33,9 @@ function LoginComponent() {
         toast.error("No user found with this credential.");
       } else if (error.code === "auth/wrong-password") {
         toast.error("Incorrect password. Please try again.");
-      } else if(error.code === "auth/invalid-email"){
-        toast.error("Incorrect Email")
-      }else{
+      } else if (error.code === "auth/invalid-email") {
+        toast.error("Incorrect Email");
+      } else {
         toast.error("Something went wrong. Please try again.");
       }
     }
