@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import MovieRow from "../components/MovieRow";
 import endpoints from "../services/TmdbService";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Trending from "../components/Trending";
 
 function Home() {
