@@ -26,7 +26,7 @@ function LoginComponent() {
       toast.success("LogIn Successful!");
       navigate("/");
     } catch (error) {
-      console.log(error.message);
+      console.log(error);
       if (error.code === "auth/missing-password") {
         toast.error("Enter Password");
       } else if (error.code === "auth/invalid-credential") {
